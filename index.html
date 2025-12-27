@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration</h2>
+        <form id="regForm">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="text" id="fName" placeholder="Father's Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="mName" placeholder="Mother's Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+            </div>
+
+            <div class="input-group">
+                <label>Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                <input type="email" id="email" placeholder="Gmail Address" required>
+            </div>
+
+            <div class="file-group">
+                <label>Upload Resume:</label>
+                <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="scrpit.js"></script>
+</body>
+</html>
